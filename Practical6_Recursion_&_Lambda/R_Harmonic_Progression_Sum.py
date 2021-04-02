@@ -5,5 +5,5 @@ def HPS(a, d, n, Sum):
         Sum+= 1/ ((1/ a)+ (n- 1)* (1/ d))
         n-= 1
         return HPS(a, d, n, Sum)
-a, d, n= float(input("a= ")), float(input("d= ")), int(input("n= "))
+a, d, n= 1/ float(input("a= 1/ ")), 1/ (float(input("d= "))), int(input("n= "))
 print(HPS(a, d, n, 0))
