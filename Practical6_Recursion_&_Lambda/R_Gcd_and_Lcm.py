@@ -1,6 +1,8 @@
 def GCD(N1, N2, Gcd):
     if (N1% Gcd == 0 and N2% Gcd == 0):
         return Gcd
+    elif (Gcd> N1 or Gcd> N2):
+        return 1
     else:
         Gcd+= 1
         return GCD(N1, N2, Gcd)
