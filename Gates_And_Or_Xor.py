@@ -18,7 +18,10 @@ def boolean_xor(List1):
             List2.append(0)
     for i in range(Len):
         List2[i+ 1]= List2[i]^ List2[i+ 1]
-    return List2[Len]
+    if List2[Len] == 1:
+        return True
+    if List2[Len] == 0:
+        return False
 print(boolean_and([True, True, False, True]))
 print(boolean_or([True, True, False, False]))
 print(boolean_xor([True, True, False, False]))
